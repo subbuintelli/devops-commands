@@ -1,4 +1,26 @@
 
+<?php
+/**
+ * Template Name: Custome header and footer
+ *
+ **/
+$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/";
+
+?>
+
+<?php $current_url="https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
+
+$current_url=urlencode($current_url);
+?>
+
+<link rel="stylesheet" href="<?php echo $actual_link; ?>assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo $actual_link; ?>assets/css/font-awesome.min.css" >
+  
+  
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
